@@ -26,8 +26,9 @@ stages:
         version: '$(dotnetSdkVersion)'
 
     - task: NodeTool@0
-       inputs:
-         versionSpec: '14.x'
+      displayName: 'Set node tool'
+      inputs:
+        versionSpec: '14.x'
 
     - task: Npm@1
       displayName: 'Run npm install'
