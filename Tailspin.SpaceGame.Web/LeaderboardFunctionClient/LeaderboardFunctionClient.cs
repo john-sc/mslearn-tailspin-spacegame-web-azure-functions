@@ -20,7 +20,8 @@ namespace TailSpin.SpaceGame.Web
         {
             using (WebClient webClient = new WebClient())
             {
-                string json = await webClient.DownloadStringTaskAsync($"{this._functionUrl}?page={page}&pageSize={pageSize}&mode={mode}&region={region}");
+                string json0 = await webClient.DownloadStringTaskAsync($"{this._functionUrl}?page={page}&pageSize={pageSize}&mode={mode}&region={region}");
+                string json = await webClient.,DownloadStringTaskAsync("http://tailspin-space-game-leaderboard-20361.azurewebsites.net/api/LeaderboardFunction?page=&pageSize=10&mode=");
                 return JsonSerializer.Deserialize<LeaderboardResponse>(json);
             }
         }
