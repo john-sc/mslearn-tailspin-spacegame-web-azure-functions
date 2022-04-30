@@ -22,7 +22,7 @@ namespace TailSpin.SpaceGame.Web
             {
                 string json = await webClient.DownloadStringTaskAsync($"{this._functionUrl}?page={page}&pageSize={pageSize}&mode={mode}&region={region}");
                 //string json = await webClient.DownloadStringTaskAsync($"{this._functionUrl}/api/LeaderboardFunction?page={page}&pageSize={pageSize}&mode={mode}&region={region}");
-                return JsonSerializer.Deserialize<LeaderboardResponse>(json);
+                return null; //JsonSerializer.Deserialize<LeaderboardResponse>(json);
             }
         }
     }
