@@ -26,7 +26,6 @@ stages:
         version: '$(dotnetSdkVersion)'
         
     - task: NodeTool@0
-       displayName: 'Set the node version back'
        inputs:
          versionSpec: '14.x'
 
