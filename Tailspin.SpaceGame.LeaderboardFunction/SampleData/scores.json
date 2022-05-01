@@ -1,16 +1,16 @@
 [
   {
     "id": "1",
-    "profileId": "1",
-    "score": 999999,
-    "gameMode": "Solo",
-    "gameRegion": "Milky Way"
+    "ProfileId": "1",
+    "Score": 999999,
+    "GameMode": "Solo",
+    "GameRegion": "Milky Way"
   },
   {
     "id": "2",
-    "profileId": "2",
-    "score": 111111,
-    "gameMode": "Solo",
-    "gameRegion": "NGC 1300"
+    "ProfileId": "2",
+    "Score": 111111,
+    "GameMode": "Solo",
+    "GameRegion": "NGC 1300"
   }
 ]
