@@ -24,7 +24,7 @@ namespace TailSpin.SpaceGame.Web
                 {
                     PropertyNameCaseInsensitive = true
                     ,MaxDepth = 10
-                    ,IncludeFields = true
+                    //,IncludeFields = true
                 };
                  string json = await webClient.DownloadStringTaskAsync($"{this._functionUrl}?page={page}&pageSize={pageSize}&mode={mode}&region={region}");
                 //string json = await webClient.DownloadStringTaskAsync($"{this._functionUrl}/api/LeaderboardFunction?page={page}&pageSize={pageSize}&mode={mode}&region={region}");
