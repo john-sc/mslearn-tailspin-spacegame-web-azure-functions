@@ -5,19 +5,19 @@ namespace TailSpin.SpaceGame.Web.Models
     public class Score : Model
     {
         // The ID of the player profile associated with this score.
-        [JsonPropertyName("profileId")]
+        [JsonPropertyName("ProfileId")]
         public string ProfileId { get; set; }
 
         // The score value.
-        [JsonPropertyName("score")]
+        [JsonPropertyName("Score")]
         public int HighScore { get; set; }
 
         // The game mode the score is associated with.
-        [JsonPropertyName("gameMode")]
+        [JsonPropertyName("GameMode")]
         public string GameMode { get; set; }
 
         // The game region (map) the score is associated with.
-        [JsonPropertyName("gameRegion")]
+        [JsonPropertyName("GameRegion")]
         public string GameRegion { get; set; }
     }
 }
